@@ -1,0 +1,11 @@
+body    {padding: 100px;}
+
+#box-1  {border: rgb(87, 87, 87) solid 50px;
+        margin: 50px;}
+
+#box-2  {margin-bottom: 50px;}
+
+#box-4  {border: black solid 10px}
+
+#box-6  {margin: 50px;
+        padding-bottom: 100px;}
