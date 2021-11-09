@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+
+
+<body>
+
+    <label for="name">Name (Req.):</label>
+
+    <input type="text" id="name" name="name" size="10" required>
+
+    <label for="email">Email (Req.):</label>
+
+    <input type="email" id="email" pattern=".+@globex\.com" 
+    size="30" required>
+    
+    <label for="question">Tell us your story:</label>
+
+    <textarea id="question" name="question" rows="5" cols="33">
+        What has been your experience with mental health, 
+        personally or otherwise?:
+    </textarea>
+
+    <p>
+        Do you think mental health is just as or more 
+        important than physical health? (Req.):
+    </p>
+
+    <div>
+        <input type="radio" id="yes" name="answer" value="yes"
+                checked>
+        <label for="yes">yes</label>
+    </div>
+
+    <div>
+        <input type="radio" id="no" name="answer" value="no">
+        <label for="no">no</label>
+    </div>
+
+    <div>
+        <input type="radio" id="unsure" name="answer" value="unsure">
+        <label for="unsure">unsure</label>
+    </div>
+
+    <p>
+        Please select all that apply in respect to 
+        your presumed state of mental health (Req.):
+    </p>
+
+    <div>
+        <input type="checkbox" id="Functioning" name="Functioning"
+                checked>
+        <label for="Functioning">Functioning</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="Mood-Changes" name="Mood-Changes">
+        <label for="Mood-Changes">Mood-Changes</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="Anxiety" name="Anxiety">
+        <label for="Anxiety">Anxiety</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="Self-Confusion" 
+        name="Self-Confusion">
+        <label for="Self-Confusion">Self-Confusion</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="Psychosis" name="Psychosis">
+        <label for="Psychosis">Psychosis</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="Eating Problems" 
+        name="Eating Problems">
+        <label for="Eating Problems">Eating Problems</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="Trauma" name="Trauma">
+        <label for="Trauma">Trauma</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="Substance Abuse" 
+        name="Substance Abuse">
+        <label for="Substance Abuse">Substance Abuse</label>
+    </div>
+
+    <label for="Date">Today's Date:</label>
+
+    <input type="date" id="Date" name="Date"
+       value="2021-01-01"
+       min="2021-01-01" max="2022-12-31"
+    >
+
+    <input type="submit" value="Send Request">
+
+</body>
