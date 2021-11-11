@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#scene {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#ball-container {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    animation: moving 4s linear infinite alternate;
+}
+
+@keyframes moving {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+#ball {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(129, 104, 72);
+    border-radius: 100%;
+    z-index: 1;
+    animation: bouncing .5s ease-in-out infinite alternate;
+    transform-origin: center bottom;
+}
+
+@keyframes bouncing {
+    0% {
+        bottom: 200px;
+    }
+    50% {
+        transform: scale(0.9, 1.1);
+    }
+    100% {
+        bottom: 0px;
+        transform: scale(1.1, 0.9);
+    }
+}
+
+#highlight {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    color: blanchedalmond;
+    border-radius: 100%;
+    top: 40px;
+    left: 55px;
+    transform: rotateZ(-37deg);
+    box-shadow: 0 0 5px 4px blanchedalmond;
+    opacity: 90%;
+}
+
+#shadow {
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    background-color: black;
+    border-radius: 100%;
+    bottom: -5px;
+    box-shadow: 0 0 5px 5px black;
+    opacity: 70%;
+    animation: shadow-bounce 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes shadow-bounce {
+    0% {
+        transform: scale(0.6);
+        opacity: 40%;
+    }
+    100% {
+        transform: scale(0.3);
+        opacity: 70%;
+    }
+}
